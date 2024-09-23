@@ -1,0 +1,440 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 3%;
+  overflow: auto;
+}
+
+/* Blur the background */
+.blurred {
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+/* Modal close button */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Styles for skill tags */
+.skills span {
+  background-color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Animation for popup */
+.modal.show {
+  display: flex;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.left-part {
+  width: 50%;
+}
+
+.right-part {
+  width: 50%;
+}
+
+/* Header container for about heading and close button */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for About Heading */
+.about-heading {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: #1986a7; 
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  padding-left: 1rem;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  text-align: justify;
+  width: full;
+  margin-top: 3%;
+  margin-left: 25px;
+}
+
+.flexx{
+  margin-top: 8%;
+}
+
+/* Flexbox Container for Skills and Image */
+.skills-container {
+  flex-direction: row;
+  width: 100%; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 25px;
+}
+
+/* Styles for Skill Tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 0.75rem;
+  max-width: 100%; 
+
+}
+
+.skills-tags span {
+  background-color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+
+}
+
+.skills-tags span:hover {
+  background-color: #1986a7; 
+
+}
+
+
+/* Container for Image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width to fit right part */
+  margin-top: 1rem;
+}
+
+/* Styles for the Image */
+.coding-image {
+  height: auto;
+  padding: 30px;
+  margin-top: 15%;
+}
+
+.stack {
+  font-size: 1.5rem;
+  color: #1986a7;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 6%;
+  margin-left: 1.4rem;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+
+}
+
+.header h2 {
+  margin: 0; 
+  line-height: 1; 
+}
+
+.header img {
+  vertical-align: middle;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+
+  .left-part, .right-part {
+    width: 100%;
+  }
+
+
+  .modal-content {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .skills-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+
+  .skills-tags span{
+    font-size: 1rem;
+  }
+  .skills-tags span:hover {
+    background-color: #1986a7; 
+  
+  }
+
+  .coding-image {
+    max-height: 290px;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-description {
+    font-size: 1.5rem;
+    margin: 5% 0%;
+    text-align: justify;
+  }
+
+  .stack {
+    font-size:2rem;
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  .coding-image {
+    height: auto;
+    padding: 0px;
+    margin-top: 0%;
+  }
+   .tooltip-container {
+      justify-content: center; 
+      gap: 90px;
+
+    }
+  
+    .tooltip-icon {
+      margin: 0 10px; 
+    }
+  
+}
+
+
+@media (max-width: 767px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .coding-image {
+    height: 200px;
+  }
+
+  .skills-container {
+    gap: 0.5rem;
+  }
+
+  .skills-tags span {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .stack {
+    font-size: 1.3rem;
+  }
+}
+
+/*  mobile screens (below 480px) */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 96%;
+    margin-top: 18%;
+    height: auto;
+  
+  }
+
+  .coding-image {
+    display: none;
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+    padding-left: 0%;
+
+  }
+
+  .about-description {
+    font-size: 0.8rem;
+    padding-top: 6%;
+    margin-left: 0%;
+  }
+
+  .stack {
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 20%;
+  }
+
+  .about-description {
+    text-align: start;
+  }
+
+  .skills-container {
+    margin-left: 0%;
+  }
+  
+
+  .tooltip-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 10px; 
+  }
+
+  .tooltip-icon {
+    margin: 0 10px; /* Consistent margins for spacing */
+  }
+}
+
+.tooltip-container {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 42px 0; 
+  margin-top: 3%;
+}
+
+/* Tooltip icons should also use flex properties */
+.tooltip-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-size: 30px;
+  font-weight: 700;
+  cursor: default;
+  position: relative;
+  margin: 0 15px; 
+}
+
+
+.mongodb {
+  color: #47a248;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #8cc84b;
+}
+
+.tooltip-icon img {
+    position: relative;
+    z-index: 10;
+}
+
+.tooltip {
+  font-size: 14px;
+  color: black;
+  position: absolute;
+  top: 16px;
+  border-radius: 24px;
+  padding: 8px 14px;
+  opacity: 0;
+  margin-left: -5px;
+  transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip-icon:hover .tooltip {
+    top: -48px;
+    opacity: 1;
+}
+
+.tooltip span {
+  position: relative;
+  z-index: 1;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  transform: rotate(45deg) translateX(-50%);
+  left: 50%;
+  bottom: -12px;
+  background-color: inherit;
+}
+
+.mongodb .tooltip {
+  background-color: #47a248;
+  color: white;
+}
+
+.express .tooltip {
+  background-color: white;
+}
+
+.react .tooltip {
+  background-color: #61dafb;
+}
+
+.node .tooltip {
+  background-color: #8cc84b;
+}
+
+
