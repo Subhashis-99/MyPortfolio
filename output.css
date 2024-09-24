@@ -755,10 +755,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -769,6 +765,10 @@ video {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -1593,72 +1593,16 @@ video {
     margin-right: auto;
   }
 
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .sm\:mt-24 {
     margin-top: 6rem;
   }
 
   .sm\:mt-28 {
     margin-top: 7rem;
-  }
-
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .sm\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .sm\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .sm\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .sm\:mt-\[\] {
-    margin-top: ;
-  }
-
-  .sm\:mt-\[1\] {
-    margin-top: 1;
-  }
-
-  .sm\:mt-\[10\] {
-    margin-top: 10;
-  }
-
-  .sm\:mt-\[105\] {
-    margin-top: 105;
-  }
-
-  .sm\:mt-\[105p\] {
-    margin-top: 105p;
-  }
-
-  .sm\:mt-\[105px\] {
-    margin-top: 105px;
-  }
-
-  .sm\:mt-\[10px\] {
-    margin-top: 10px;
-  }
-
-  .sm\:mt-\[109px\] {
-    margin-top: 109px;
-  }
-
-  .sm\:mt-\[1px\] {
-    margin-top: 1px;
-  }
-
-  .sm\:mt-\[11px\] {
-    margin-top: 11px;
-  }
-
-  .sm\:mt-\[110px\] {
-    margin-top: 110px;
   }
 
   .sm\:block {
