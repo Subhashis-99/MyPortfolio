@@ -683,26 +683,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.mx-7 {
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
 .-mt-10 {
   margin-top: -2.5rem;
 }
@@ -775,12 +755,20 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1137,11 +1125,6 @@ video {
   padding-bottom: 3.5rem !important;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1185,31 +1168,6 @@ video {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pb-10 {
@@ -1643,6 +1601,66 @@ video {
     margin-top: 7rem;
   }
 
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .sm\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .sm\:mt-\[1\] {
+    margin-top: 1;
+  }
+
+  .sm\:mt-\[10\] {
+    margin-top: 10;
+  }
+
+  .sm\:mt-\[105\] {
+    margin-top: 105;
+  }
+
+  .sm\:mt-\[105p\] {
+    margin-top: 105p;
+  }
+
+  .sm\:mt-\[105px\] {
+    margin-top: 105px;
+  }
+
+  .sm\:mt-\[10px\] {
+    margin-top: 10px;
+  }
+
+  .sm\:mt-\[109px\] {
+    margin-top: 109px;
+  }
+
+  .sm\:mt-\[1px\] {
+    margin-top: 1px;
+  }
+
+  .sm\:mt-\[11px\] {
+    margin-top: 11px;
+  }
+
+  .sm\:mt-\[110px\] {
+    margin-top: 110px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1684,10 +1702,6 @@ video {
 
   .sm\:pb-16 {
     padding-bottom: 4rem;
-  }
-
-  .sm\:pb-1 {
-    padding-bottom: 0.25rem;
   }
 
   .sm\:text-\[40px\] {
@@ -1755,11 +1769,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .md\:px-16 {
