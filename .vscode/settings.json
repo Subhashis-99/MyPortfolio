@@ -1,0 +1,11 @@
+{
+  "workbench.settings.editor": "ui",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
+  "window.zoomLevel": 1,
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "files.autoSaveWhenNoErrors": false,
+  "files.autoSave": "afterDelay"
+}
